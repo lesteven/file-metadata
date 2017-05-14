@@ -12,7 +12,7 @@ var upload = multer({dest:'uploads/',
 app.use('/',express.static(__dirname + '/public'));
 
 app.post('/filesize',upload.single('file'),function(req,res){
-	console.log(req.file)
+	//console.log(req.file)
 	res.json({'bytes':req.file.size})
 	
 })
