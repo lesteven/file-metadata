@@ -4,8 +4,10 @@ var app = express();
 app.use(morgan('dev'));
 var port = process.env.PORT || 3000;
 
+var maxSize = 100000
 var multer = require('multer');
-var upload = multer({dest:'uploads/'})
+var upload = multer({dest:'uploads/',
+				limits:{fileSize:maxSize}})
 
 app.use('/',express.static(__dirname + '/public'));
 
