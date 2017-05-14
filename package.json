@@ -1,0 +1,16 @@
+{
+  "name": "metadata",
+  "version": "1.0.0",
+  "description": "File metadata API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Le",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "multer": "^1.3.0"
+  }
+}
